@@ -1,0 +1,58 @@
+$light-grey: #ededed;
+
+.header {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.products {
+  width: 90%;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+  margin: 2rem auto;
+};
+
+.product-container {
+  display: grid;
+  max-width: 18rem;
+};
+
+.image-container {
+  flex: 2 1 60rem;
+  margin: 2rem auto;
+  background-color: $light-grey;
+};
+
+.info-grid {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.product-image {
+  max-width: 18rem;
+};
+
+.product-price {
+  display: grid;
+  grid-auto-flow: column;
+  width: 6rem;
+  font-weight: 700;
+};
+
+.small-font {
+  font-size: 12px;
+  margin: 0;
+  padding-top: 10px;
+};
+
+.green-text {
+  color: green;
+}
+
+.grey-text {
+  color: grey;
+  text-decoration: line-through;
+}

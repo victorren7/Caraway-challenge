@@ -1,0 +1,23 @@
+$lime-green: #c3f63b;
+$dark-grey: #353b48;
+$white: #f5f6fa;
+
+.challenge-1 {
+  text-align: center;
+  background-color: $lime-green;
+};
+
+.add-to-cart {
+  width: 11rem;
+  height: 3rem;
+  color: $lime-green;
+  background-color: $dark-grey;
+  border-radius: 28px;
+  border: none;
+  box-shadow: 6px 7px 1px 2px $white;
+  &:hover {
+    color: $dark-grey;
+    background-color: $white;
+    box-shadow: -13px -7px 1px 3px  $dark-grey;
+  };
+};
