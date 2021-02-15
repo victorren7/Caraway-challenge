@@ -4,24 +4,15 @@ import '../App.scss';
 import '../styles/Challenge-2.scss';
 const Challenge_2 = () => {
 
-  const [isEmailValid, setIsEmailValid] = useState(false);
   const [isEmail, setEmail] = useState();
   const [password, setPassword] = useState();
   const [isEmailHover, setEmailHover] = useState(false);
   const [isPasswordHover, setPasswordHover] = useState(false);
 
-  useEffect(() => {
-    // validatedEmail()
-  }, [])
-
   const validatedEmail = (email) => {
     const validEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return validEmail.test(email);
-  }
-  const greenAfterAt = includes(isEmail, '@')
-  
-  console.log('email valid',validatedEmail(isEmail))
-  // console.log('includes', includes(isEmail, '@'))
+  };
 
   return (
     <div className='challenge challenge-2'>
